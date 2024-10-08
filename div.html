@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <div class="container">
+
+        <div id="div">
+            <h1 id="h1">Hi There</h1>
+    
+        </div>
+    </div>
+    <button>Click here</button>
+    <script>
+        let h1=document.getElementById("h1");
+        let div=document.querySelector("div");
+        div.style.backgroundColor="blue";
+        div.style.color="white";
+        div.style.width="200px";
+        div.style.height="200px";
+        div.style.borderRadius="15px";
+        let button=document.querySelector("button");
+        button.style.marginTop="20px";
+        
+        button.onclick=function(event){
+             h1.innerText="Text changed";
+             h1.style.color="black";
+             div.style.backgroundColor="blueviolet";
+
+             
+            }
+    </script>
+</body>
+</html>
